@@ -1,31 +1,35 @@
-import React, { useEffect, useState} from 'react';
+import React from 'react';
 import Portfolio from "./components/PortfolioPage/Portfolio";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import OrderPage from './components/OrderPage/OrderPage';
+import UserState from './Context/UserState';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-    const [backendData, setBackendData] = useState([{}])
-
-    useEffect(() => {
-        fetch("/api").then(
-            response => response.json()
-        ).then(
-            data => {
-                setBackendData(data)
-            }
-        )
-    }, [])
-
   return (
     <div className="App">
-      <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Portfolio />} />
-        <Route path='/order' element={<OrderPage />} />
-      </Routes>
-      </BrowserRouter>
-      
+      <UserState>
+        <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Portfolio />} />
+          <Route path='/order' element={<OrderPage />} />
+        </Routes>
+        </BrowserRouter>
+        <ToastContainer 
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+      </UserState>
     </div>
   );
 }

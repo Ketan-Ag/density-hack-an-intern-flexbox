@@ -1,8 +1,15 @@
 .PortfolioContainer{
     display:grid;
     grid-template-columns: 68% 28%;
-    gap:10px;
+    background-color: #f3f3f3;
 }
+.PortfolioGraphs{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px;
+    height:55vh;
+}
+
 .PortfolioTransactionHistory{
     grid-row: 2/ span 2;
 }

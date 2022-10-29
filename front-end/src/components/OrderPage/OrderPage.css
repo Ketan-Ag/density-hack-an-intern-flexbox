@@ -1,0 +1,21 @@
+.oderPage{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Orderbook{
+    width:60vw;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.Order-Book-Buy, .Order-Book-Sell{
+    margin: auto;
+    margin-top: 0;
+}
+.BuyGreen{
+    color:green;
+}
+.SellRed{
+    color:Red;
+}
