@@ -27,6 +27,7 @@ const MyResponsiveLine = ({ data /* see data tab */ }) => (
           legendOffset: 36,
           legendPosition: 'middle',
           textColor: 'white',
+          tickColor: 'red'
       }}
       axisLeft={{
           orient: 'left',
@@ -38,6 +39,24 @@ const MyResponsiveLine = ({ data /* see data tab */ }) => (
           legendPosition: 'middle',
           textColor: 'white',
       }}
+      theme={{ 
+        axis: { 
+          legend: { 
+            text: { 
+              fill: "#fff" 
+            } 
+          },
+          ticks: {
+            line: {
+              stroke: "#fff"
+            },
+            text: {
+              fill:"#fff"
+            }
+          },
+        } 
+      }}
+
       pointSize={10}
       pointColor={{ theme: 'background' }}
       pointBorderWidth={2}
@@ -48,7 +67,7 @@ const MyResponsiveLine = ({ data /* see data tab */ }) => (
         return (
           <div
               style={{
-                  background: 'white',
+                  background: 'black',
                   padding: '9px 12px',
                   border: '1px solid #ccc',
               }}
@@ -77,7 +96,7 @@ function PortfolioGraph() {
   }, [])
     
   return (
-      <MyResponsiveLine data={[{id: 'market price', color: "hsl(289, 70%, 50%)", data: transactions}]} />
+    <MyResponsiveLine data={[{id: 'market price', color: "hsl(289, 70%, 50%)", data: transactions}]} />
   )
 }
 

@@ -26,12 +26,12 @@ function PortUserPortfolio() {
         Current Market price : {currMarketPrice}
       </div>      
       <div className='userportfolio'>
-          <table className="table table-info table-striped-columns">
+          <table className="table table-info table-striped-columns PortfolioTable">
       <thead>
         <tr className="table-info">
-          <th scope="col">Username</th>
-          <th scope="col">Stocks</th>
-          <th scope="col">Fiat $</th>
+          <th className='Table-HeaderForPadding' scope="col">Username</th>
+          <th className='Table-HeaderForPadding' scope="col">Stocks</th>
+          <th className='Table-HeaderForPadding' scope="col">Fiat $</th>
         </tr>
       </thead>
       <tbody>
@@ -39,9 +39,9 @@ function PortUserPortfolio() {
           users.map((user) => (
             
               <tr key={user.user_id} className="table-info">
-                <td className="table-info">{user.user_name}</td>
-                <td className="table-info">{user.stocks}</td>
-                <td className="table-info">{user.balance}</td>
+                <td className="table-info Table-ElementForPadding">{user.user_name}</td>
+                <td className="table-info Table-ElementForPadding">{user.stocks}</td>
+                <td className="table-info Table-ElementForPadding">{user.balance}</td>
         </tr>
           
           ))

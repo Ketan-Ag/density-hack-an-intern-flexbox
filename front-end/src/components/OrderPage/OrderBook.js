@@ -1,20 +1,25 @@
 import React from 'react'
 import UserContext from '../../Context/UserContext';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 function OrderBook() {
     const usercontext = useContext(UserContext);
     const {orderBuy, orderSell} = usercontext;
 
   return (
-    <div className='Orderbook'>
+    <div className='OrderBookContainer'>
+        <div className="BackbuttontoPortfolio">
+            <Link to="/">&larr; Back</Link>
+        </div>
+        <div className='Orderbook'>
         <div className='Order-Book-Buy'>
             <div className='BuyGreen'>Buy</div>
-      <table className="table table-bordered border-success">
+      <table className="table table-bordered border-success TableOrderBook">
   <thead>
     <tr >
-      <th scope="col" style={{borderBottom:"2px solid green"}}>Quantity</th>
-      <th scope="col" style={{borderBottom:"2px solid green"}}>Price</th>
+      <th className='Table-HeaderForPadding' scope="col" style={{borderBottom:"2px solid green"}}>Quantity</th>
+      <th className='Table-HeaderForPadding' scope="col" style={{borderBottom:"2px solid green"}}>Price</th>
     </tr>
   </thead>
   <tbody>
@@ -31,11 +36,11 @@ function OrderBook() {
 </div>
 <div className="Order-Book-Sell">
 <div className='SellRed'>Sell</div>
-<table className="table">
+<table className="table TableOrderBook">
   <thead>
     <tr>
-      <th scope="col" style={{borderBottom:"2px solid red"}}>Quantity</th>
-      <th scope="col" style={{borderBottom:"2px solid red"}}>Price</th>
+      <th className='Table-HeaderForPadding' scope="col" style={{borderBottom:"2px solid red"}}>Quantity</th>
+      <th className='Table-HeaderForPadding' scope="col" style={{borderBottom:"2px solid red"}}>Price</th>
     </tr>
   </thead>
   <tbody>
@@ -50,6 +55,7 @@ function OrderBook() {
   </tbody>
 </table>
 </div>
+    </div>
     </div>
   )
 }

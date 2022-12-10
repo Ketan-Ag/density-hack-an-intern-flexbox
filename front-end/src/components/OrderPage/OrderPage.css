@@ -10,36 +10,61 @@
     width:60vw;
     border-radius: 10px;
     border:2px solid gray;
-    margin-top: 20px;
-    height:50vh;
+    height:55vh;
     background-color: rgb(46, 45, 45);
     color:greenyellow;
     display: flex;
     justify-content: center;
     font-size: 20px;
 }
+.OrderBookContainer{
+    display: flex;
+    flex-direction: column;
+}
+.BackbuttontoPortfolio{
+margin:20px 0;
+}
+.BackbuttontoPortfolio a{
+padding:10px 20px;
+color:greenyellow;
+background-color: rgb(46, 45, 45);
+font-weight: bold;
+border: 2px sold gray;
+border-radius: 10px;
+text-decoration: none;
+}
 .Order-Book-Buy, .Order-Book-Sell{
     margin: auto;
     margin-top: 0;
 }
 .BuyGreen{
-    color:green;
+    color:#00ff00;
+    margin:10px 0;
     font-weight: bold;
 }
 .SellRed{
     color:Red;
+    margin:10px 0;
     font-weight: bold;
 }
 .BUY-OR-SELL{
     width:30vw;
     border-radius: 10px;
     background-color: rgb(46, 45, 45);
+    border:2px solid gray;
+    margin-top: 60px;
     color:greenyellow;
-    height:50vh;
+    height:55vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.Place-Order-Button:hover{
+background-color: greenyellow;
+color:rgb(46, 45, 45);
+font-weight: bold;
+cursor: pointer;
 }
 #buyorsell,#IdforselectUser, #OrderType, .Stock-Amount-Input, .Price-Limit-Input, .Place-Order-Button{
     border-radius: 10px;
@@ -48,5 +73,8 @@
     color:greenyellow;
     background-color: black;
     font-weight: bold;
+}
+.TableOrderBook{
+    text-align: center;
 }
 

@@ -21,35 +21,35 @@ function TransactionHistory() {
    },[])
   return (
     <div>
-      <table className="table">
+      <table className="table Transaction-History-Table">
   <thead>
     <tr>
-      <th scope="col">Transaction Id</th>
-      <th scope="col">Buyer</th>
-      <th scope="col">Buyer Id</th>
-      <th scope="col">Stocks</th>
-      <th scope="col">Seller</th>
-      <th scope="col">Seller Id</th>
+      <th className='Table-HeaderForPadding' scope="col">Transaction Id</th>
+      <th className='Table-HeaderForPadding' scope="col">Buyer</th>
+      <th className='Table-HeaderForPadding' scope="col">Buyer Id</th>
+      <th className='Table-HeaderForPadding' scope="col">Stocks</th>
+      <th className='Table-HeaderForPadding' scope="col">Seller</th>
+      <th className='Table-HeaderForPadding' scope="col">Seller Id</th>
     </tr>
   </thead>
   <tbody>
     {
         Transactionss.map(transaction => (
             <tr>
-                <th scope="row">{transaction.transaction_id}</th>
+                <th className='Table-ElementForPadding' scope="row">{transaction.transaction_id}</th>
                     {
                         users.map(user => (
                             user.user_id === transaction.buyer_id ? <td>{user.user_name}</td> : ""
                         ))
                     }
-                <td>{transaction.buyer_id}</td>
-                <td>{transaction.stocks_quantity}</td>
+                <td className='Table-ElementForPadding'>{transaction.buyer_id}</td>
+                <td className='Table-ElementForPadding'>{transaction.stocks_quantity}</td>
                 {
                     users.map(user => (
                         user.user_id === transaction.seller_id ? <td>{user.user_name}</td> : ""
                     ))
                 }
-                <td>{transaction.seller_id}</td>
+                <td className='Table-ElementForPadding'>{transaction.seller_id}</td>
             </tr>
         ))
     }

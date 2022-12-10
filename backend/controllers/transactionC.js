@@ -105,7 +105,7 @@ const buyerDeletion = async (props) => {
     }
 
     if(stocksRemaining>0 && flag == 1) {
-        const response = await sellerBookUpdate({current_selling_price :props.current_selling_price, min_seller_row_order, max_seller_row_order, stocks_quantity: req.body.stocks_quantity, seller_id: props.seller_id});
+        const response = await sellerBookUpdate({current_selling_price :props.current_selling_price, min_seller_row_order, max_seller_row_order, stocks_quantity: stocksRemaining, seller_id: props.seller_id});
     }
 
     return ({

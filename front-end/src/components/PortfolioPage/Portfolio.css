@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns: 68% 28%;
     background-color: black;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     width: 100vw;
     height:100vh;
     overflow: hidden;
@@ -12,7 +12,6 @@
 .PortfolioGraphs{
     border: 2px solid grey;
     border-radius: 10px;
-    margin:8px;
     margin-top: 10px;
     margin-bottom: 0;
     height:55vh;
@@ -26,6 +25,9 @@
     margin-top: 10px;
     width:25vw;
     
+}
+.PortfolioTable{
+    margin:10px;
 }
 .currentmarketprice{
     background-color: rgb(46, 45, 45);
@@ -55,7 +57,18 @@
     height:38vh;
     width:65vw;
 }
-
+.Transaction-History-Table{
+    margin:15px 10px;
+    text-align: center;
+}
+.Table-HeaderForPadding{
+    padding:5px 10px;
+    font-weight: bold
+}
+.Table-ElementForPadding{
+    padding: 5px 10px;
+    font-weight: 600;
+}
 ::-webkit-scrollbar {
   width: 5px;
   color: white;
@@ -80,6 +93,8 @@
     font-size: 20px;
     padding:8px;
     border: 3px solid grey;
+    border-radius: 10px;
+    text-decoration: none;
 }
 .BuyorSellButton a:hover{
     background-color: greenyellow;
