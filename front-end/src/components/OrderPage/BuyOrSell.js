@@ -16,7 +16,7 @@ function BuyOrSell() {
     <div>
       <div className="Buy-OR-Sell">
       <select className="form-select" aria-label="Default select example">
-        <option selected>Buy OR Sell</option>
+        <option selected>Buy/Sell</option>
         <option value="Buy">Buy</option>
         <option value="Sell">Sell</option>
     </select>
