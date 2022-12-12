@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/density-hack-an-intern-flexbox/static/css/main.69882bff.css",
+    "main.js": "/density-hack-an-intern-flexbox/static/js/main.68c4876b.js",
+    "static/js/787.2fa32ad6.chunk.js": "/density-hack-an-intern-flexbox/static/js/787.2fa32ad6.chunk.js",
+    "index.html": "/density-hack-an-intern-flexbox/index.html",
+    "main.69882bff.css.map": "/density-hack-an-intern-flexbox/static/css/main.69882bff.css.map",
+    "main.68c4876b.js.map": "/density-hack-an-intern-flexbox/static/js/main.68c4876b.js.map",
+    "787.2fa32ad6.chunk.js.map": "/density-hack-an-intern-flexbox/static/js/787.2fa32ad6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69882bff.css",
+    "static/js/main.68c4876b.js"
+  ]
+}
