@@ -1,7 +1,7 @@
 {
   "name": "team-flexbox",
   "version": "0.1.0",
-  "proxy": "http://127.0.0.1:5001/",
+  "proxy": "http://ec2-44-206-228-136.compute-1.amazonaws.com:5001/",
   "private": true,
   "dependencies": {
     "@nivo/core": "^0.80.0",
